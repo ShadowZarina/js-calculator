@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Odin Project Calculator</title>
+</head>
+
+<body>
+    <div id="calculator-border">
+        <div id="calculator">
+            <div class="top-row">
+                <button onclick="clearEntry()" class="operator-btn clear-btn">C</button>
+                <div id="display">
+                    <div class="previousNumber"></div>
+                    <div class="currentNumber"></div>
+                </div>
+            </div>
+            <div id="keys">
+                
+
+                <button onclick="appendToDisplay('7')" class="number row1">7</button>
+                <button onclick="appendToDisplay('8')" class="number row1">8</button>
+                <button onclick="appendToDisplay('9')" class="number row1">9</button>
+                <button onclick="appendToDisplay('+')" class="operator-btn row4 plus">+</button>
+
+                <button onclick="appendToDisplay('4')" class="number row2">4</button>
+                <button onclick="appendToDisplay('5')" class="number row2">5</button>
+                <button onclick="appendToDisplay('6')" class="number row2">6</button>
+                <button onclick="appendToDisplay('-')" class="operator-btn row3 minus">-</button>
+                
+
+                <button onclick="appendToDisplay('1')" class="number row3">1</button>
+                <button onclick="appendToDisplay('2')" class="number row3">2</button>
+                <button onclick="appendToDisplay('3')" class="number row3">3</button>
+                <button onclick="appendToDisplay('*')" class="operator-btn row2 times">x</button>
+                
+                <button onclick="appendToDisplay('.')" class="decimal row4">.</button>
+                <button onclick="appendToDisplay('0')" class="number zero-btn">0</button>
+                <button onclick="operate()" class="equal row4">=</button>
+                <button onclick="appendToDisplay('/')" class="operator-btn row1">÷</button>
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
